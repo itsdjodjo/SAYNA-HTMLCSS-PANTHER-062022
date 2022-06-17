@@ -87,3 +87,6 @@ nav {
 .nav-links a:hover {
     text-decoration: underline;
 }
+.img-hover:hover {
+    filter: brightness(0) saturate(100%) invert(75%) sepia(61%) saturate(1896%) hue-rotate(212deg) brightness(100%) contrast(90%);
+}
