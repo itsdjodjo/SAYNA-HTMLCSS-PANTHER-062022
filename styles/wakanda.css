@@ -35,9 +35,7 @@ body {
     color: var(--white);
     font-family: "Cantarell", sans-serif;
     font-size: 1rem;
-    background: url(../assets/All_pages/arrière_plan.png), radial-gradient(126.67% 350.28% at -21.35%
-    0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
-    0.837641) 94.57%, rgba(2, 23, 64, 0) 100%)
+    background-image: url(../assets/All_pages/arrière_plan.png);
 }
 
 a {
@@ -89,6 +87,104 @@ nav {
 .img-hover:hover {
     filter: brightness(0) saturate(100%) invert(75%) sepia(61%) saturate(1896%) hue-rotate(212deg) brightness(100%) contrast(90%);
 }
+/* Fin Header */
+
+
+.banner {
+    background-image: url(../assets/Wakanda/Pantherwakanda1.png);
+    background-size: cover;
+}
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem;
+    padding-left: 10rem;
+    padding-bottom: 20rem;
+}
+.banner-title {
+    font-family: "Beyno";
+    color: var(--gris);
+    font-size: 4.25rem;
+    font-weight: 300;
+}
+.banner-subtitle {
+    font-family: "Wakanda forever";
+    color: var(--gris);
+    font-size: 2.688rem;
+    margin-top: 0.5rem;
+}
+.banner-text p {
+    width: 35%;
+    text-align: justify;
+    margin-top: 3rem;
+}
+.quote {
+    font-size: .875rem;
+}
+
+/* Section History of Wakanda */
+#wakanda-history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    gap: 7rem;
+    padding: 10%;
+    text-align: justify;
+    position: relative;
+}
+#wakanda-history>* {
+    position: relative;
+    z-index: 1;
+}
+#wakanda-history::after {
+    content: "";
+    background-image: url(../assets/Wakanda/Pantherwakanda2.png);
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.15;
+}
+#wakanda-history p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#wakanda-history h3 {
+    font-family: "Beyno";
+    color: var(--gris);
+    font-size: 1.3rem;
+}
+#wakanda-history img {
+    width: 100%;
+}
+.video iframe {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer {
